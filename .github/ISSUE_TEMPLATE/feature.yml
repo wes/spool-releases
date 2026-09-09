@@ -1,0 +1,17 @@
+name: Feature request
+description: Something Spool should do and does not.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want to be able to do
+      description: The task, rather than the button. What it stops you doing
+        today is the useful part.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How you handle it now
+      description: The workaround, if there is one.

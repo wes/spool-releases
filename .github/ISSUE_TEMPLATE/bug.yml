@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in Spool is broken or wrong.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Spool version
+      description: From Spool → About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "14.5 (Apple silicon)"
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Mail provider
+      description: Only if the bug involves an account. Gmail, Fastmail, a
+        company server, and so on.
+  - type: textarea
+    id: anything
+    attributes:
+      label: Anything else
+      description: Screenshots, a crash report, the size of the mailbox — whatever
+        seems relevant. Please redact addresses and message contents.
