@@ -1,55 +1,26 @@
-# Spool
+# Spool has moved
 
-A fast email client for macOS.
+Spool is open source now, and everything lives in one place:
+**[github.com/wes/spool](https://github.com/wes/spool)**: the source, the
+releases and the issue tracker.
 
-Spool is written in Rust and draws with the GPU, using the same UI framework as
-the Zed editor. There is no web view and no Electron anywhere in it. The point
-of building it that way is not the stack — it is that a mailbox with a quarter
-of a million messages in it feels the same as an empty one.
+**[Download the latest Spool](https://github.com/wes/spool/releases/latest/download/Spool.dmg)**
 
-**[Download the latest release](https://github.com/wes/spool-releases/releases/latest)**
+## If you have 0.1.15 or earlier
 
-Requires macOS 13 (Ventura) or later. Universal — Apple silicon and Intel.
+Install 0.1.16 or later by hand, once: download it from the link above, open the
+disk image, and drag Spool over the copy in Applications. Your accounts, mail
+and settings stay where they are.
 
-## Installing
+Your copy will not offer the update itself. From 0.1.16, Spool is signed by a
+different Apple developer team, and older copies only install updates signed
+by the team they came from. Once you are on 0.1.16, updates arrive in the app
+as usual again.
 
-Open the disk image and drag Spool to Applications. The app is signed and
-notarized by Apple, so it opens on the first double-click; there is no
-right-click-Open ritual and nothing to disable in System Settings.
+## This repository
 
-## What it does
+It held Spool's releases while the source was private, up to 0.1.15. It is
+archived and read-only, and kept so those downloads stay where they were.
+Nothing new will be published here.
 
-Three panes — mailboxes, messages, the message — driven from the keyboard, with
-a command palette for everything that does not have a key. Several accounts at
-once, with a unified inbox across them. Full-text search that keeps up with
-typing. Conversation threading. HTML mail rendered as styled text rather than
-handed to a browser engine. Four themes.
-
-It syncs over IMAP against real servers, and it is quick about it.
-
-## What it does not do yet
-
-**You cannot write mail in it.** Composing, replying and forwarding are not
-built; the send engine is, and nothing in the app reaches it. Today Spool is
-somewhere to read, search and file mail, and you will need something else open
-to answer any of it. That is the next thing being worked on.
-
-Also missing: OAuth for anything but Gmail (elsewhere means an app password),
-attachments beyond their names, a contacts screen, and new mail arriving on its
-own rather than when you ask.
-
-## Setting up an account
-
-On first launch Spool asks for an account. Gmail signs in with Google. Everyone
-else needs the IMAP and SMTP host names and an **app password** — not your
-normal one, which most providers will refuse. Passwords are stored in the macOS
-keychain.
-
-## Reporting a bug
-
-[Open an issue.](https://github.com/wes/spool-releases/issues/new/choose) The
-version from **Spool → About** and what you were doing when it happened are
-usually enough to get started.
-
-This repository holds the releases, the changelog and the issue tracker. The
-source is not public.
+Bugs and questions: [wes/spool issues](https://github.com/wes/spool/issues).
